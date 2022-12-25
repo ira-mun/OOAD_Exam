@@ -14,7 +14,7 @@ public class DataProcessingInvoice{
 
         }
         else {
-            for(int i = 0; i <= 3; i++)
+            for(int i = 1; i <= 3; i++)
             autoPayment(cardNumber,expDate,cvv,currentDate + i);
             if( autoPayment(cardNumber,expDate,cvv,currentDate + 3) == false) blockCard(cardNumber,expDate,cvv);
         }
